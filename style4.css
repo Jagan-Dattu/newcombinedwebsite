@@ -49,6 +49,10 @@ a pre:visited {
     justify-content: center;
 
   }
+ #da{
+    display: flex;
+    justify-content: center;
+  }
 #dat{
     display: flex;
     justify-content: center;

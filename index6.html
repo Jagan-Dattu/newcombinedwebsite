@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jagan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h1>
+        my first javascript
+    </h1>
+    <p id="demo">my name is jagan </p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "hi jagan"'>
+    click here 
+    </button> -->
+    <nav>
+        <h1 style="text-decoration: underline; font-style: italic; color: blue;">JAGAN<br/> WEBSITES</h1>
+        <a href="index6.html" target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>  BMI calculator</pre>
+    </a>
+    <a href="index2.html "target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>   Maths calculator</pre>
+    </a>
+    <div style="display: inline-block;">
+        <a href="index3.html" target="_blank" style="text-decoration: none; font-size: 20px;">
+            <pre>  clock /</pre>
+        </a>
+    </div>
+    <div style="display: inline-block;">
+        <a href="index7.html" target="_blank" style="text-decoration: none; font-size: 20px;">
+            <pre> Digital</pre>
+        </a>
+    </div>
+    <a href="https://jagan-dattu.github.io/Jagan-Dattus-second-website/ " target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>   Resume</pre>
+    </a>
+    <a href="index4.html" target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>   Rockpaperscissor game</pre>
+    </a>
+    <a href="index8.html" target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>  Tic-Tac-Toe game</pre>
+    </a>
+    <a href="index5.html" target=blan style="text-decoration: none; font-size: 20px;">
+        <pre> First webpage</pre>
+    </a>
+
+    </nav>
+       
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="p">
+    <br>
+    <div id="z">
+        <h1 style="text-decoration: underline;">BMI CALCULATOR</h1>
+        <br />
+        <br />
+       
+    <h1 id="l"></h>
+    <h2 id="k"></h2>
+    <p>It calculates your <strong>BODY MASS INDEX</strong> by entering your height and weight</p>
+    <h2> Enter the height=<input type="number" placeholder="0" id="inp">in cm</h2>
+   <h2>Enter the weight=<input type="number" placeholder="0" id="inpu">in kg</h2>
+    <h2 id="o"></h2>
+    <h3 id="para"></h3>
+    <button class="butt">Calculate the BMI</button>
+</div>
+</div>
+<!-- <button class="j" type="button"
+onclick="document.getElementById('l').innerHTML = Date()">
+Click me to display Date and Time.</button> -->
+    <script>
+        // let x=func(2,4);
+        // document.getElementById('k').innerHTML=x;
+        
+        /*this can be done by also using function as onclick="calculate() in button and this down 
+        from const s= to down statement without using queryselector and addevemtlistener */
+        const buttons=document.querySelector('.butt');
+        buttons.addEventListener('click',()=>{
+            const s=document.getElementById('inp');
+        const a=s.value;
+        const numberValue = parseFloat(a);
+        const p=document.getElementById('inpu');
+        const r=p.value;
+        const numbervalue = parseFloat(r);
+        const q=numbervalue/(numberValue*numberValue);
+        const c=q*10000;
+            document.getElementById('o').innerHTML=`Your BODY MASS INDEX is:${c.toFixed(1)} Kg/m^2`;
+        if(c>=18.5 && c<=25)
+        {
+            document.getElementById('para').innerHTML=`You have BMI as normal`;
+        }
+        })
+       
+
+    </script>
+    
+</body>
+</html>

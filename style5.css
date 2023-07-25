@@ -1,0 +1,17 @@
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(195, 198, 7);
+  }
+  a pre:visited {
+    color: rgb(200, 255, 192);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a pre:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    
+  }

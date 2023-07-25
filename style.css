@@ -1,0 +1,56 @@
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+  }
+  
+  body {
+    background: #33CCCC; /* Fallback */
+    animation: color 9s infinite linear;
+    /* text-align: center; */
+    padding: 2em;
+  }
+  #z{
+    text-decoration: none;
+    margin-right: 10px;
+    border: 2px solid #cc7333;
+    border-radius: 20px;
+    padding: 20px;
+    
+  }
+  a pre:visited {
+    color: rgb(200, 255, 192);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a pre:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    
+  }
+  nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(195, 198, 7);
+    
+  }
+  #p{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    
+    margin-right: 50px;
+  
+
+    /* border:2px solid black; */
+  }
+  /* .j{
+    border:2px solid black;
+    border-width: 20px;
+    
+  } */

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style2.css" class="rel">
+    <script src="index2.js"></script>
+</head>
+<body>
+    <nav>
+        <h1 style="text-decoration: underline; font-style: italic; color: blue;">JAGAN<br/> WEBSITES</h1>
+        <a href="index6.html" target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>  BMI calculator</pre>
+    </a>
+    <a href="index2.html "target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>   Maths calculator</pre>
+    </a>
+    <div style="display: inline-block;">
+        <a href="index3.html" target="_blank" style="text-decoration: none; font-size: 20px;">
+            <pre>  clock /</pre>
+        </a>
+    </div>
+    <div style="display: inline-block;">
+        <a href="index7.html" target="_blank" style="text-decoration: none; font-size: 20px;">
+            <pre> Digital</pre>
+        </a>
+    </div>
+    <a href="https://jagan-dattu.github.io/Jagan-Dattus-second-website/ " target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>   Resume</pre>
+    </a>
+    <a href="index4.html" target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>   Rockpaperscissor game</pre>
+    </a>
+    <a href="index8.html" target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>  Tic-Tac-Toe game</pre>
+    </a>
+    <a href="index5.html" target=blan style="text-decoration: none; font-size: 20px;">
+        <pre> First webpage</pre>
+    </a>
+
+    </nav>
+       
+
+    </nav>
+    <br />
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+
+
+    <div class="cal">
+    <input type="text" placeholder="0" id="input">
+    <br>
+    <div class="buttons">
+        <button  class="button"id="spec">C</button>
+        <button  class="button"id="spec">%</button>
+        <button  class="button"id="spec">*</button>
+        <button  class="button" id="spec">X</button>
+        
+    </div>
+    <br>
+    <div class="buttons">
+        <button  class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button" id="spec">-</button>
+        
+
+    </div>
+    <br>
+    <div class="buttons">
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button" id="spec">+</button>
+        
+
+
+    </div>
+    <br>
+    <div class="buttons">
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button" id="spec">/</button>
+    </div>
+    <br/>
+    <div class="buttons">
+        <button class="button">!</button>
+        <button class="button">0</button>
+        <button class="button">.</button>
+        <button class="button" id="equal">=</button>
+    </div>
+</div>
+
+    
+</body>
+<script>
+    let string="";
+let buttons=document.querySelectorAll('.button');
+Array.from(buttons).forEach((button) =>{
+    button.addEventListener('click',()=>{
+        if(button.innerHTML=='=')
+        {
+            string=eval(string);
+            document.querySelector('input').value=string;
+
+        }
+        else if(button.innerHTML=='C')
+        {
+            string="";
+            document.querySelector('input').value=string;
+        }
+        else if(button.innerHTML=='X')
+        {
+            string=string.substring(0,string.length-1);
+            document.querySelector('input').value=string;
+        }
+        else{
+        console.log(button.innerHTML)
+        string=string+button.innerHTML;
+        document.querySelector('#input').value=string;
+        }
+    })
+})
+</script>
+</html>

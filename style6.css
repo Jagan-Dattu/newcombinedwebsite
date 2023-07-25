@@ -1,0 +1,31 @@
+body{
+    background-color: bisque;
+    background: url(photo.jpg) no-repeat;
+}
+a pre:visited {
+    color: rgb(200, 255, 192);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a pre:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    
+  }
+.div{
+    border: 5px solid grey;
+    border-radius: 50px;
+    height: 550px;
+    width:400px;
+    margin-top: 40px;
+    top:40%;
+    display: block;
+    margin-left: 80px;
+    /* display: flex; */
+    justify-content: center;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+}

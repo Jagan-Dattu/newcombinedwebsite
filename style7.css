@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(91, 3, 134);
+    background-image: url(R.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(195, 198, 7);
+  }
+#div{
+    border: 6px solid white;
+    color: chartreuse;
+    font-size: 50px;
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#dat{
+    border: 6px solid white;
+    color: chartreuse;
+    font-size: 50px;
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+a pre:visited {
+    color: rgb(200, 255, 192);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a pre:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    
+  }
+
+#h1{
+    font-size: 60px;
+    color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+#jag{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    margin-left: 40%;
+    font-size: 40px;
+    margin: auto;
+}

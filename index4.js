@@ -1,6 +1,7 @@
 
-
 let con=-1;
+let m=0;
+let n=0;
 function enter(){
     let g=document.getElementById('dat');
     let y=parseFloat(g.value);
@@ -13,10 +14,26 @@ function enter(){
         con--;
         if(con==0)
         {
-            document.querySelector('button').disabled = true;
-        }
-    }
 
+            if(n>m)
+            {
+                console.log("jagan");
+                document.getElementById('da').innerHTML=`player 1 won`;
+                
+            }        
+            if(n<m)
+            {  
+                document.getElementById('da').innerHTML=`computer won`;
+                
+            } 
+            if(n==m)
+            { 
+                document.getElementById('da').innerHTML=`it's a draw`;
+               
+            }       
+            document.querySelector('button').disabled = true;        
+       }
+    }
     let s=document.getElementById('input');
     let d=s.value;
     let r=parseFloat(d);
@@ -26,6 +43,7 @@ function enter(){
     if(r==1 && q==2)
     {
         document.getElementById('answer').innerText=`computer won`;
+        m++;
     }
     if(r==1 && q==1)
     {
@@ -34,11 +52,13 @@ function enter(){
     if(r==1 && q==3)
     {
         document.getElementById('answer').innerText=`player 1 won`;
+        n++;
 
     }
     if(r==2 && q==1)
     {
         document.getElementById('answer').innerText=`player 1won`;
+        n++;
     }
     if(r==2 && q==2)
     {
@@ -47,14 +67,17 @@ function enter(){
     if(r==2 && q==3)
     {
         document.getElementById('answer').innerText=`computer won`;
+        m++;
     }
     if(r==3 && q==1)
     {
         document.getElementById('answer').innerText=`player 1 won`;
+        n++;
     }
     if(r==3 && q==2)
     {
         document.getElementById('answer').innerText=`computer won`;
+        m++;
     }
     if(r==3 && q==3)
     {
@@ -63,6 +86,10 @@ function enter(){
     if(con>0){
     disableb();
     }
+
 }
+
+
+
 
 

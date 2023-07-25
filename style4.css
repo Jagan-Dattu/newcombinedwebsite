@@ -49,6 +49,9 @@ a pre:visited {
     justify-content: center;
 
   }
+ button{
+    cursor: pointer;
+  }
  #da{
     display: flex;
     justify-content: center;

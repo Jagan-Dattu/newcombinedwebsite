@@ -3,79 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jagan</title>
-    <link rel="stylesheet" href="style6.css">
-  </head>
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <!-- <h1>
-        my first javascript
-    </h1>
-    <p id="demo">my name is jagan </p>
-    <button type="button" onclick='document.getElementById("demo").innerHTML = "hi jagan"'>
-    click here 
-    </button> -->
-        <a href="index.html">
-        <h1 style="text-decoration: underline; font-style: italic; color: blue;">JAGAN WEBSITES</h1>
-    </a>
-        <hr />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+    <h1 class="k">Snake and Ladder &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Green:Ladder && Red:Snake&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <br/> </h1>
+    <br/>
+    <br/>
+    <h2 class="o" >Player 1<br/><br/>
+        <button class="button1" onclick="display()">rotate the dice</button>
+        <br/>
+        <br/>
+        <input type="number" placeholder="0" id="input">
+        <br/>
+        <p id="ol" style="font-size: 30px;"></p>
+        <p id="loll"style="font-size: 30px;"></p>
+        <p id="ok"style="font-size: 30px;"></p>
+    </h2>
+    <h2 class="p">Player 2
+        <br/>
+        <br/>
+        <button class="button2" onclick="display2()">rotate the dice</button>
+        <br/>
+        <br/>
+        <input type="number" placeholder="0" id="input2">
+        <br/>
+        
+        <p id="lo" style="font-size: 30px;"></p>
+        <p id="lol" style="font-size: 30px;"></p>
+        <p id="ko" style="font-size: 30px;"></p>
+    </h2>
+    <div class="cont">
+        <div class="box">100</div>
+        <div class="box">99</div>
+        <div class="box"id="ro">98</div>
+        <div class="box">97</div>
+        <div class="box">96</div>
+        <div class="box">95</div>
+        <div class="box">94</div>
+        <div class="box"id="ro">93</div>
+        <div class="box">92</div>
+        <div class="box">91</div>
+        <div class="box">90</div>
+        <div class="box"id="ro">89</div>
+        <div class="box">88</div>
+        <div class="box">87</div>
+        <div class="box">86</div>
+        <div class="box">85</div>
+        <div class="box">84</div>
+        <div class="box">83</div>
+        <div class="box">82</div>
+        <div class="box">81</div>
+        <div class="box" id="col">80</div>
+        <div class="box">79</div>
+        <div class="box">78</div>
+        <div class="box"id="ro">77</div>
+        <div class="box">76</div>
+        <div class="box">75</div>
+        <div class="box">74</div>
+        <div class="box">73</div>
+        <div class="box">72</div>
+        <div class="box" id="col">71</div>
+        <div class="box">70</div>
+        <div class="box">69</div>
+        <div class="box">68</div>
+        <div class="box">67</div>
+        <div class="box" id="col">66</div>
+        <div class="box">65</div>
+        <div class="box"id="ro">64</div>
+        <div class="box">63</div>
+        <div class="box">62</div>
+        <div class="box">61</div>
+        <div class="box">60</div>
+        <div class="box">59</div>
+        <div class="box">58</div>
+        <div class="box">57</div>
+        <div class="box">56</div>
+        <div class="box">55</div>
+        <div class="box">54</div>
+        <div class="box">53</div>
+        <div class="box">52</div>
+        <div class="box" id="col">51</div>
+        <div class="box">50</div>
+        <div class="box">49</div>
+        <div class="box" id="col"> 48</div>
+        <div class="box">47</div>
+        <div class="box">46</div>
+        <div class="box">45</div>
+        <div class="box"id="ro">44</div>
+        <div class="box">43</div>
+        <div class="box">42</div>
+        <div class="box">41</div>
+        <div class="box">40</div>
+        <div class="box">39</div>
+        <div class="box">38</div>
+        <div class="box">37</div>
+        <div class="box">36</div>
+        <div class="box">35</div>
+        <div class="box">34</div>
+        <div class="box">33</div>
+        <div class="box"id="ro">32</div>
+        <div class="box">31</div>
+        <div class="box">30</div>
+        <div class="box">29</div>
+        <div class="box" id="col">28</div>
+        <div class="box">27</div>
+        <div class="box">26</div>
+        <div class="box">25</div>
+        <div class="box">24</div>
+        <div class="box">23</div>
+        <div class="box">22</div>
+        <div class="box" id="col">21</div>
+        <div class="box">20</div>
+        <div class="box">19</div>
+        <div class="box">18</div>
+        <div class="box"id="ro">17</div>
+        <div class="box">16</div>
+        <div class="box">15</div>
+        <div class="box">14</div>
+        <div class="box" id="ro">13</div>
+        <div class="box">12</div>
+        <div class="box">11</div>
+        <div class="box">10</div>
+        <div class="box" id="col">9</div>
+        <div class="box">8</div>
+        <div class="box">7</div>
+        <div class="box">6</div>
+        <div class="box">5</div>
+        <div class="box" id="col">4</div>
+        <div class="box">3</div>
+        <div class="box" id="col">2</div>
+        <div class="box">1</div>
+    </div>
+    <!-- <div class="image">
+    <img src="Ladder-PNG-Download-Image.png" class="jag">
+</div> -->
 
-        <div class="div">
-
-            <ul>
-                <li>
-        <a href="index6.html"  style="text-decoration: none; font-size: 20px;">
-        <pre style="color: aqua; font-size: 30px;"> BMI calculator</pre>
-    </a>
-</li>
-<li>
-    <a href="index2.html "target=blank style="text-decoration: none; font-size: 20px;">
-        <pre style="color: aqua; font-size: 30px;"> Maths calculator</pre>
-    </a>
-</li>
-<li>
-    <a href="index3.html" target=blank style="text-decoration: none; font-size: 20px;">
-        <pre style="color: aqua; font-size: 30px;"> clock</pre>
-    </a>
-</li>
-<li>
-    <a href="index7.html" target=blank style="text-decoration: none; font-size: 20px;">
-        <pre style="color: aqua; font-size: 30px;"> Digital and Date</pre>
-    </a>
-</li>
-
-<li>
-    <a href="https://jagan-dattu.github.io/Jagan-Dattus-second-website/ " target=blank style="text-decoration: none; font-size: 20px;">
-        <pre style="color: aqua; font-size: 30px;"> Resume</pre>
-    </a>
-</li>
-<li>
-    <a href="index4.html" target=blank style="text-decoration: none; font-size: 20px;">
-        <pre style="color: aqua; font-size: 30px;"> Rockpaperscissor game</pre>
-    </a>
-</li>
-<li>
-    <a href="index8.html" target=blank style="text-decoration: none; font-size: 20px;">
-        <pre style="color: aqua; font-size: 30px;"> Tic-Tac-Toe game</pre>
-    </a>
-</li>
-
-<li>
-    <a href="index5.html" target=blan style="text-decoration: none; font-size: 20px;">
-        <pre style="color: aqua; font-size: 30px;"> First webpage</pre>
-    </a>
-</li>
-</ul>
+<div class="l">
+    <img src="download.jpeg" class="pin">
 </div>
-    
-    
+<script src="index.js"></script>
 </body>
 </html>

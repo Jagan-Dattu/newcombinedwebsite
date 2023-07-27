@@ -1,5 +1,7 @@
 body{
     background-color: aquamarine;
+    background: url(bg1.jpg) no-repeat;
+
 }
 #h1{
     border: 2px solid blue;
@@ -49,10 +51,10 @@ a pre:visited {
     justify-content: center;
 
   }
- button{
+  button{
     cursor: pointer;
   }
- #da{
+  #da{
     display: flex;
     justify-content: center;
   }

@@ -13,7 +13,8 @@ nav{
     display: flex;
     justify-content: center;
     background-color: rgb(195, 198, 7);
-    
+    width: 100vw;
+    font-size: 10px;
   }
 .container {
     display: flex;
@@ -49,7 +50,8 @@ nav{
     grid-template-columns: repeat(3,10vw);
 }
 .box{
-    font-size: 60px;
+    align-items: center;
+    font-size: 6vw;
     color: blue;
     border: 2px solid red;
 }

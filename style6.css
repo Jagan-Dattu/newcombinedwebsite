@@ -1,6 +1,8 @@
 body{
     background-color: bisque;
-   background: url(web-agency-bg1.jpg) no-repeat;
+    background: url(download\ \(1\).jpeg) no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 a pre:visited {
     color: rgb(200, 255, 192);
@@ -14,10 +16,16 @@ a pre:visited {
     text-decoration: underline;
     
   }
+  li{
+    color: aqua;
+  }
+  div pre{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
 .div{
-    border: 5px solid grey;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 50px;
-    height: 600px;
+    height: 590px;
     width:400px;
     margin-top: 40px;
     top:40%;
@@ -28,4 +36,13 @@ a pre:visited {
     margin: auto;
     align-content: center;
     align-items: center;
+}
+#jag{
+  position: absolute;
+  top:70%;
+  left:80%;
+  font-size: 40px;
+  color: chartreuse;
+  text-shadow: 0px 5px 30px rgb(143 222 0);
+  font-family: 'Times New Roman', Times, serif;
 }

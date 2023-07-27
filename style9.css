@@ -79,8 +79,6 @@ body{
     margin-top: 4%;
     top:10%;
     flex-wrap: wrap;
-     width: 90%; /* Set the width to 90% of the viewport width */
-    max-width: 1200px; /* Set a maximum width for larger screens */
     margin: 0 auto; 
     margin-bottom: 0%;
     grid-template-rows: repeat(10,5.5vw);

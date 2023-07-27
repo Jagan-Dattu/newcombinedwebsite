@@ -8,15 +8,17 @@ body{
     background-size: 100% 100%;
     height: 100vh;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .k {
     position: absolute;
-    top: 2px; /* Adjust the top position as needed */
-    left: 10px; /* Adjust the left position as needed */
+    viewport-fit: 0px;
+    top: 2px; 
+    left: 10px; 
     border: 3px solid rgb(0, 2, 2);
-    border-radius: 20px;
+    border-radius: 2.4vw;
     height: 45px;
-    font-size: 35px;
+    font-size: 2.4vw;
     color: rgb(153, 241, 241);
     text-decoration: underline;
     
@@ -26,7 +28,7 @@ body{
     top: 60px;
     left: 10px; 
     color: rgb(14 26 240);
-    font-size: 40px;
+    font-size: 2.4vw;
 }
 .p {
     
@@ -35,7 +37,7 @@ body{
     right: 0px; 
     color: rgb(5 44 0);
     
-    font-size: 40px;
+    font-size: 2.4vw;
 }
 .cont{
     margin-left: 8px;
@@ -43,11 +45,12 @@ body{
     display: grid;
     justify-content: center;
     margin-top: 10px;
+    flex-wrap: wrap;
     grid-template-rows: repeat(10,5.5vw);
     grid-template-columns: repeat(10,6vw);
 }
 .box{
-    font-size: 30px;
+    font-size: 2vw;
     color: rgb(15, 15, 174);
     border: 2px solid rgb(147, 251, 232);
 }
@@ -89,7 +92,14 @@ body{
         
     }
 }
-
+@media only screen and (max-width: 768px) {
+    /* CSS rules for mobile devices go here */
+    .cont {
+        width: 100%; /* Relative width */
+        max-width: 1200px; /* Set a maximum width for large screens */
+        margin: 0 auto; /* Center the container horizontally */
+      }
+  }
 @keyframes move{
     0%{
         right:0;
@@ -102,11 +112,11 @@ button{
 
     border-radius: 80px;
     height: 60px;
-    font-size: 20px;
+    font-size: 1.5vw;
     cursor: pointer;
 }
 input{
     height: 40px;
-    font-size: 20px;
+    font-size: 1.5vw;
     border-radius: 20px;
 }

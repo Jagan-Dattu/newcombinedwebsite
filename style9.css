@@ -78,7 +78,7 @@ body{
     justify-content: center;
     margin-top: 4%;
     top:10%;
-    flex-wrap: wrap;
+    /* width: 90px; */
     margin: 0 auto; 
     margin-bottom: 0%;
     grid-template-rows: repeat(10,5.5vw);
@@ -107,7 +107,9 @@ body{
     position: absolute;
     top: 66%;
     left: 1%; 
-    border-radius: 80px;
+  
+    border-radius: 10px;
+    width: 240px;
     height: 30px;
     font-size: 1vw;
     cursor: pointer;
@@ -118,23 +120,14 @@ body{
     position: absolute;
     top: 66%;
     left: 83%; 
-    border-radius: 80px;
+    /* border-radius: 80px; */
+    border-radius: 10px;
+    width: 240px;
     height: 30px;
     font-size: 1vw;
     cursor: pointer;
     height: 40px;
 }
-.pin{
-    /* Set the maximum height and width for the image */
-    
-    left:90%;
-    max-height: 500px;
-    max-width: 100px;
-    position: absolute;
-    bottom: 2%;
-    /* animation: jagan 0.3s infinite; */
-    /* animation: move 10s linear infinite; */
-  }
   
   .jag{
     /* Set the maximum height and width for the image */
@@ -145,12 +138,7 @@ body{
     position: absolute;
     /* animation: jagan 0.3s infinite; */
   }
-@keyframes jagan{
-    100%{
-        transform: rotate(360deg);
-        
-    }
-}
+
 @media screen and (aspect-ratio: 16/9) {
     /* For screens with aspect ratio less than or equal to 16:9 */
     .cont {
@@ -200,8 +188,17 @@ body{
         left:200px;
     }
 }
+.button1{
+    border-radius: 10px;
+    width: 240px;
+    cursor: pointer;
+}
+.button2{
+    border-radius: 10px;
+    width: 240px;
+    cursor: pointer;
+}
 button{
-
     border-radius: 80px;
     height: 60px;
     font-size: 1.5vw;

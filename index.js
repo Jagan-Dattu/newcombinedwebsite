@@ -320,6 +320,7 @@ boxes[100-w].style.backgroundColor='blue';
         document.getElementById('ok').innerText=`from ${w} go to 1`;
          document.getElementById('ol').innerText=`previous position is ${w} `;
         boxes[100-1].innerText='player 1';
+
         boxes[99].style.color='red';
         boxes[99].style.backgroundColor='blue';
         
@@ -332,7 +333,12 @@ boxes[100-w].style.backgroundColor='blue';
         aud.play();
         return;
     }
+    lop(w);
 }
+}
+function lop(number){
+
+console.log(number);
 }
 let q=0;
 let p=0;
@@ -467,9 +473,9 @@ boxes[100-96].style.backgroundColor='black';
         document.getElementById('oloo').innerText='you have climbed the ladder';
         document.getElementById('ko').innerText=`from ${p} go to 67`;
          document.getElementById('lo').innerText=`previous position is ${p} `;
-        boxes[100-51].innerText='player 2';
-        boxes[100-51].style.color='pink';
-boxes[100-51].style.backgroundColor='black';
+        boxes[100-67].innerText='player 2';
+        boxes[100-67].style.color='pink';
+        boxes[100-67].style.backgroundColor='black';
         p=67;
         document.getElementById('lol').innerText=`current position is ${p}`;
     }
@@ -586,7 +592,7 @@ boxes[100-39].style.backgroundColor='black';
         boxes[100-p].style.backgroundColor='';
         audi.play();
         document.getElementById('oloo').innerText='you have bitten by snake';
-        document.getElementById('ok').innerText=`from ${p} go to 60`;
+        document.getElementById('ko').innerText=`from ${p} go to 60`;
          document.getElementById('lo').innerText=`previous position is ${p} `;
         boxes[100-60].innerText='player 2';
         boxes[100-60].style.color='pink';

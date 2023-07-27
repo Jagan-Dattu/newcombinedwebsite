@@ -1,4 +1,5 @@
 let t='X';
+let aud=new Audio("hoorays-73283-[AudioTrimmer.com].mp3");
 function change()
 {
     if(t==='X')
@@ -87,6 +88,7 @@ function wiorlo()
 }
 let p=1;
 let b=1;
+let cond=false;
 document.getElementById('dattu').innerText=`player ${p} Enter`;
 
 boxes.forEach((box,index) => {
@@ -99,13 +101,26 @@ boxes.forEach((box,index) => {
             t=change();
             y=winorloss();
             r=wiorlo();
+            if(cond==true)
+            {
+                document.removeEventListener('click',()=>{});
+                return;
+               
+            }
             if(y==true )
             {
                 document.getElementById('jagan').innerText='player 1 win';
+                aud.play();
+
+                cond=true;
+                return;
+
             }
             if(r==true )
             {
                 document.getElementById('jagan').innerText='player 2 win';
+                aud.play();
+                return;
             }
             if(p===-1)
             {

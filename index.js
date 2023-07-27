@@ -5,6 +5,50 @@ let s=-1;
 let audio= new Audio("motivational-corporate-medium1-110677-[AudioTrimmer.com] (1).mp3");
 let audi=new Audio("sad-violin-150146-[AudioTrimmer.com].mp3");
 let aud=new Audio("hoorays-73283-[AudioTrimmer.com].mp3");
+let func=document.getElementById('func');
+let funct=document.getElementById('funct');
+let click=0;
+let clicke=0;
+let but=document.getElementById('gf');
+function firstclick()
+{
+    but.style.display='block';
+}
+function secondclick()
+{
+    but.style.display='none';
+}
+func.addEventListener('click',()=>{
+    click++;
+    if(click%2!=0)
+    {
+        firstclick();
+    }
+    if(click%2===0)
+    {
+        secondclick();
+    }
+}) 
+let bute=document.getElementById('gfg');
+function firstclicke()
+{
+    bute.style.display='block';
+}
+function secondclicke()
+{
+    bute.style.display='none';
+}
+funct.addEventListener('click',()=>{
+    clicke++;
+    if(clicke%2!=0)
+    {
+        firstclicke();
+    }
+    if(clicke%2===0)
+    {
+        secondclicke();
+    }
+}) 
 function display()
 {
     const boxes=document.querySelectorAll('.box');

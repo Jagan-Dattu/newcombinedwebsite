@@ -1,5 +1,6 @@
 let t='X';
 let aud=new Audio("hoorays-73283-[AudioTrimmer.com].mp3");
+let audi=new Audio("bubbles-14830-[AudioTrimmer.com].mp3");
 function change()
 {
     if(t==='X')
@@ -94,6 +95,7 @@ document.getElementById('dattu').innerText=`player ${p} Enter`;
 boxes.forEach((box,index) => {
     box.addEventListener('click', () => {
         if (box.innerHTML==='') {
+            audi.play();
             document.getElementById('dattu').innerText=`player ${p+1} Enter`;
             box.innerHTML = t;
             p--;
@@ -111,7 +113,7 @@ boxes.forEach((box,index) => {
             {
                 document.getElementById('jagan').innerText='player 1 win';
                 aud.play();
-
+                document.querySelectorAll('.box').disabled=true;
                 cond=true;
                 return;
 

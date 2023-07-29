@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+    <link rel="stylesheet" href="style10.css" class="rel">
+</head>
+<body>
+    <nav>
+        <h1 style="text-decoration: underline; font-style: italic; color: blue;">JAGAN<br/> WEBSITES</h1>
+        <a href="index6.html" target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>  BMI calculator</pre>
+    </a>
+    <a href="index2.html "target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>   Maths calculator</pre>
+    </a>
+    <div style="display: inline-block;">
+        <a href="index3.html" target="_blank" style="text-decoration: none; font-size: 20px;">
+            <pre>  clock /</pre>
+        </a>
+    </div>
+    <div style="display: inline-block;">
+        <a href="index7.html" target="_blank" style="text-decoration: none; font-size: 20px;">
+            <pre> Digital</pre>
+        </a>
+    </div>
+    <a href="https://jagan-dattu.github.io/Jagan-Dattus-second-website/ " target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>   Resume</pre>
+    </a>
+    <a href="index4.html" target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>   Rockpaperscissor game</pre>
+    </a>
+    <a href="index8.html" target=blank style="text-decoration: none; font-size: 20px;">
+        <pre>  Tic-Tac-Toe game</pre>
+    </a>
+    <a href="index5.html" target=blan style="text-decoration: none; font-size: 20px;">
+        <pre> First webpage</pre>
+    </a>
+
+    </nav>
+       <h1 style="color: rgb(170, 0, 255); font-size: 50px; text-decoration: underline;">DICE GAME</h1>
+       <h2>Who's rolled dice has more value <br/>wins the game</h2>
+       <div class="jag">
+        <h2 style="color: rgb(13, 0, 255);">Enter how many times u wanna play <input type="number" placeholder="0"   style="border-radius: 60px;  width:60px; height: 30px; font-size: 30px;" id="dat" > </h2>
+     </div>
+     <h2>Enter 1 or 2 player mode:<input type="number" placeholder="0"   style="border-radius: 60px;  width:60px; height: 30px; font-size: 30px;" id="datt" > </h2>
+    
+    <div class="cont">
+
+        <div class="box"><span class="boxtext" id="b1"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="box"><span class="boxtext" id="b2" style="display: none;"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="box"><span class="boxtext" id="b3"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="box"><span class="boxtext" id="b4"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="box"><span class="boxtext" id="b5" style="display: none;"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="box"><span class="boxtext" id="b6"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="box"><span class="boxtext" id="b7"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="box"><span class="boxtext" id="b8" style="display: none;"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="box"><span class="boxtext" id="b9"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+
+    </div>
+    <br/>
+    <h2 class="k">jagan</h2>
+    <button class="button" onclick="play1()">Click to roll</button>
+    <div class="conta">
+
+        <div class="boxw"><span class="boxtext" id="a1"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="boxw"><span class="boxtext" id="a2" style="display: none;"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="boxw"><span class="boxtext" id="a3"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="boxw"><span class="boxtext" id="a4"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="boxw"><span class="boxtext" id="a5" style="display: none;"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="boxw"><span class="boxtext" id="a6"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="boxw"><span class="boxtext" id="a7"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="boxw"><span class="boxtext" id="a8" style="display: none;"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+        <div class="boxw"><span class="boxtext" id="a9"><button style="height: 25px; width: 25px; border-radius: 20px;" onclick="none"></button></span></div>
+
+    </div>
+    <br/>
+    <h2 class="kw">jagan</h2>
+    <button class="buttonw" onclick="play2()">Click to roll</button>
+    <script src="index10.js"></script>
+    <h1 class="result"></h1>
+    <h2 class="answers"></h2>
+    <h1 class="comp"></h1>
+    <h1 class="compu"></h1>
+
+</body>
+</html>

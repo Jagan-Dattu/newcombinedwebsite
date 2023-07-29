@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    background-color: aqua;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(195, 198, 7);
+  }
+.div{
+    height:50px;
+    background-color: brown;
+    width:50px;
+}
+.jag{
+    position: absolute;
+    top:10%;
+    left:50%;
+}
+.cont{
+   
+    display: grid;
+    position: absolute;
+    top:40%;
+    left:30%;
+    border: 1.7px solid red;
+    background-color: rgb(243, 9, 9);
+    border-radius: 10px;
+    padding: -3px;
+    grid-template-rows: repeat(3,4vw);
+    grid-template-columns: repeat(3,3vw);
+}
+.conta{
+   
+    display: grid;
+    position: absolute;
+    top:40%;
+    left:50%;
+    border: 1.7px solid red;
+    background-color: rgb(243, 9, 9);
+    border-radius: 10px;
+    padding: -3px;
+    grid-template-rows: repeat(3,4vw);
+    grid-template-columns: repeat(3,3vw);
+}
+.k{
+    position: absolute;
+    top:60%;
+    left:33.5%;
+    font-size: 30px;
+}
+.result{
+    position: absolute;
+    top:60%;
+    left:40%;
+    font-size: 30px;
+}
+.answers{
+    position: absolute;
+    top:60%;
+    left:80%;
+    font-size: 30px;
+}
+.comp{
+    position: absolute;
+    top:80%;
+    left:25%;
+    font-size: 40px;
+}
+.compu{
+    position: absolute;
+    top:90%;
+    left:25%;
+    font-size: 40px;
+}
+
+.kw{
+    position: absolute;
+    top:60%;
+    left:52.5%;
+    font-size: 30px;
+}
+.button{
+    position: absolute;
+    top:70%;
+    left:30%;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.buttonw{
+    position: absolute;
+    top:70%;
+    left:50%;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    color: rgb(15, 15, 174);
+    /* border: 2px solid rgb(255, 24, 24); */
+}
+.box:hover{
+    background-color: rgb(94, 86, 249);
+
+}
+.boxw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    color: rgb(15, 15, 174);
+    /* border: 2px solid rgb(255, 24, 24); */
+}
+.boxw:hover{
+    background-color: rgb(94, 86, 249);
+
+}
+.boxtext{
+    font-size: 28px;
+    /* position: absolute; */
+    display: flex;
+    color: rgb(255, 255, 255);
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+ 
+}
+@keyframes shake{
+    100%{
+
+    }
+}

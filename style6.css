@@ -1,28 +1,25 @@
 body {
-   background-image: url('gradient-blue-pink-abstract-art-wallpaper-preview.jpg');
+  background-image: url('gradient-blue-pink-abstract-art-wallpaper-preview.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   /* height: 100vh; */
   max-height: 2000px;
   min-height:100vh;
 }
-
 a pre:visited {
     color: rgb(200, 255, 192);
     background-color: transparent;
     text-decoration: underline;
   }
-  
-  a pre:hover {
+a pre:hover {
     color: red;
     background-color: transparent;
-    text-decoration: underline;
-    
+    text-decoration: underline; 
   }
-  li{
+li{
     color: aqua;
   }
-  div pre{
+div pre{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
 .div{
@@ -31,14 +28,18 @@ a pre:visited {
     height: 590px;
     width:400px;
     margin-top: 40px;
-    top:40%;
+    
     display: block;
-    margin-left: 80px;
+    margin-left: 40px;
+    position: absolute;
+    top:12%;
+    left: 30%;
+
     /* display: flex; */
-    justify-content: center;
+    /* justify-content: center;
     margin: auto;
     align-content: center;
-    align-items: center;
+    align-items: center; */
 }
 #jag{
   position: absolute;
@@ -51,11 +52,11 @@ a pre:visited {
 }
 @media only screen and (max-width: 768px) {
   /* CSS rules for mobile devices go here */
-  body {
+body {
     background-position: center;
     background-size: cover;
   }
-  .follow-me {
+.follow-me {
     display: block;
   }
 }

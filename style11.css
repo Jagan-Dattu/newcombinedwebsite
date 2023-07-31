@@ -1,0 +1,66 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: aqua;
+    background: url(pexels-simon-berger-1323550.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.cont{
+    position: absolute;
+    left:20%;
+    top:30%;
+    display: grid;
+    grid-template-columns: repeat(5,5vw);
+    grid-template-rows: repeat(5,5vw);
+}
+.box{
+    
+    border: 2px solid red;
+}
+.box:hover{
+    background-color: rgb(141, 141, 253);
+}
+.conta{
+    position: absolute;
+    left:60%;
+    top:30%;
+    display: grid;
+    grid-template-columns: repeat(5,5vw);
+    grid-template-rows: repeat(5,5vw);
+}
+.boxe{
+    border: 2px solid red;
+}
+.boxe:hover{
+    background-color: rgb(113, 113, 235);
+}
+.c{
+    position: absolute;
+    left:10%;
+    top:30%;
+    display: grid;
+    grid-template-columns: repeat(1,5vw);
+    grid-template-rows: repeat(5,5vw);
+}
+.boxess{
+    border: 1px solid blueviolet;
+}
+.boxess:hover{
+    background-color: rgb(249, 142, 48);
+}
+.ca{
+    position: absolute;
+    left:90%;
+    top:30%;
+    display: grid;
+    grid-template-columns: repeat(1,5vw);
+    grid-template-rows: repeat(5,5vw);
+}
+.boxesss{
+    border: 1px solid rgb(29, 99, 1);
+}
+.boxesss:hover{
+    background-color:  rgb(240, 76, 232);
+}

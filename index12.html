@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGE </title>
+    <link rel="stylesheet" href="style12.css" class="rel">
+</head>
+<body>
+    <h1 style="color: rgb(251, 255, 0);text-decoration: underline;font-size: 59px;">Age Calculator</h1>
+    <h2 style="color: aqua;font-size: 40px;" class="da">Todays date:</h2>
+    <h2 style="color: aquamarine; font-size: 30px;" class="today"></h2>
+    <h2 style="color: aqua;font-size: 60px; position: absolute; left:86%;top:13.5%" class="da">Time:</h2>
+    <h2 style="color: aquamarine; font-size: 40px; position: absolute; left:86%;top:25.5%" class="time"></h2>
+
+    <div class="cont">
+        <h2 style="position: absolute; left:42%; top:26%; align-items: center; font-size: 40px; color: crimson; border:2px solid aqua; padding: 10px; width: 320px; height: 39px; border-radius: 10px;">select date of birth</h2>
+        <select style="width: 50px; height: 40px; position: absolute; left:42%; top:40%; border-radius: 40px;font-size: 25px;" onchange="days(this.value)">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <select style="width: 140px; height: 40px; position: absolute; left:48%;; top:40%;border-radius: 40px;font-size: 25px;" onchange="month(this.value)">
+            <option value="1">january</option>
+            <option value="2">febraruy</option>
+            <option value="3">march</option>
+            <option value="4">april</option>
+            <option value="5">may</option>
+            <option value="6">june</option>
+            <option value="7">july</option>
+            <option value="8">august</option>
+            <option value="9">september</option>
+            <option value="10">october</option>
+            <option value="11">november</option>
+            <option value="12">december</option>
+        </select>
+        <select style="width: 80px; height: 40px; position: absolute; left:59%;; top:40%; border-radius: 40px; font-size: 25px;" onchange="year(this.value)">
+            <option value="2000" class="year">2000</option>
+            <option value="2001" class="year">2001</option>
+            <option value="2002" class="year">2002</option>
+            <option value="2003" class="year">2003</option>
+            <option value="2004" class="year">2004</option>
+            <option value="2005" class="year">2005</option>
+            <option value="2006" class="year">2006</option>
+            <option value="2007" class="year">2007</option>
+            <option value="2008" class="year">2008</option>
+            <option value="2009" class="year">2009</option>
+            <option value="2010" class="year">2010</option>
+            <option value="2011" class="year">2011</option>
+            <option value="2012" class="year">2012</option>
+            <option value="2013" class="year">2013</option>
+            <option value="2014" class="year">2014</option>
+            <option value="2015" class="year">2015</option>
+            <option value="2016" class="year">2016</option>
+            <option value="2017" class="year">2017</option>
+            <option value="2018" class="year">2018</option>
+            <option value="2019" class="year">2019</option>
+            <option value="2020" class="year">2020</option>
+            <option value="2021" class="year">2021</option>
+            <option value="2022" class="year">2022</option>
+        </select>
+        <h1 style=" position: absolute; left:30%; top:50%;color: chartreuse;" class="answe"></h1>
+        <h1 style=" position: absolute; left:48%; top:54%;color: chartreuse;" class="answerr"></h1>
+        <h1 style="position: absolute; left:48%; top:59%;color: chartreuse;" class="answer"></h1>
+        <h1 style="position: absolute; left:48%; top:63%;color: chartreuse;" class="answers"></h1>
+    </div>
+
+    <script src="index12.js"></script>
+</body>
+</html>
